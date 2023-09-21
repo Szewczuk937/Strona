@@ -1,56 +1,166 @@
 <!doctype html>
 <html>
-  <head>
+    
+<head>
     <meta charset="utf-8" />
 
-    <title>Заголовок моей страницы</title>
-    <link
-      href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Sonsie+One"
-      rel="stylesheet"
-      type="text/css" />
-    <link rel="stylesheet" href="style.css" />
-  </head>
+    <title>Olińka</title>
 
-  <body>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Sonsie+One" rel="stylesheet"
+        type="text/css" />
+</head>
+
+<body>
     <!-- Вот наш главный заголовок, который используется на всех страницах нашего веб-сайта -->
+    <!-- Форма поиска — это ещё один распространённый нелинейный способ навигации по веб-сайту. -->
 
-    <header>
-      <h1>Olka slodka buzia</h1>
-    </header>
-
-    <nav>
-      <ul>
-        <li><a href="#">Strona główna</a></li>
-        <li><a href="#">o Nas</a></li>
-        <li><a href="#">Banki</a></li>
-        <li><a href="#">Promki</a></li>
-      </ul>
-
-      <!-- Форма поиска — это ещё один распространённый нелинейный способ навигации по веб-сайту. -->
-
-      <form>
+    <form>
         <input type="search" name="q" placeholder="Search query" />
         <input type="submit" value="Go!" />
-      </form>
+    </form>
+
+    <header>
+        <h1>Olka porządna dziewczyna</h1>
+    </header>
+
+    <nav> <!--Panel po lewej stronie-->
+        <ul id="left_panel">
+            <li><a href="Strona.html" onclick="openbox(0); return false">Strona główna</a></li>
+            <li><a href="#" onclick="openbox(1); return false">Konta osobiste</a></li>
+            <li><a href="#" onclick="openbox(2); return false">Promki</a></li>
+            <li><a href="#" onclick="openbox(3); return false">Pożyczki</a></li>
+            <li><a href="#" onclick="openbox(4); return false">o Nas</a></li>
+        </ul>
+        <div id="box0" class="box" style="display: none"><a>wypelnienie boxa</a></div>
+        <div id="box1" class="box" style="display: none">
+                    <a>
+                        <div id="dox_pozyc">
+
+                            <img id="img_ING" src="/foto/Zrzut ekranu 2023-09-21 151316.png" height="250px">
+                                <div id="text_ING">
+                        <h3>KAMPANIA Z PROCESEM ON-LINE</h3>
+                        <h2>Konto Direct w <a href="https://www.comperialead.pl/a/pp_adserwer.php?link=4da97a6db9592417f49930606339cc80" rel="nofollow, noindex">ING Banku Śląskim</a></h2>
+                        <h4>do <b>200 zł</b> zysku za otwarcie i aktywne korzystanie z konta najważniejsze funkcje konta za 0 zł aplikacja Moje ING mobile- od otworzenia konta w ciągu 2 miesięcy wykonać bezgotówkową transakcje na kwote minimum 200 zł</h1>
+                                </div>
+                        </div>
+
+    
+                    </a></div>
+        <div id="box2" class="box" style="display: none"><a>wypełnienie boxa Promki</a></div>
+        <div id="box3" class="box" style="display: none"><a>wypełnienie boxa Pożyczki</a></div>
+        <div id="box4" class="box" style="display: none"><a>wypełnienie boxa o Nas</a></div>
     </nav>
-
-    <!-- Здесь основное содержимое нашей страницы -->
+    
+    <!--<a href="https://tmlead.pl/redirect/714781_2612">Link do Pekao>></a>
+    // Здесь основное содержимое нашей страницы 
     <main>
-      <!-- Она содержит статью -->
-      <article>
-    
-      </article>
+      //Она содержит статью 
+        <article>
 
-      <!-- Дополнительный контент также может быть вложен в основной контент -->
-      <aside>
-    
-      </aside>
+        </article>
+
+        // Дополнительный контент также может быть вложен в основной контент 
+        <aside>
+
+        </aside>
     </main>
 
-    <!-- И вот наш главный нижний колонтитул, который используется на всех страницах нашего веб-сайта -->
+    //И вот наш главный нижний колонтитул, который используется на всех страницах нашего веб-сайта 
 
     <footer>
-      <p>©by_Olka_Słodka_buzia</p>
+        <p>©by_Olka_Słodka_buzia</p>
     </footer>
-  </body>
+-->
+        <!--Styl calej strony-->
+    <style>
+        html{
+            box-sizing: border-box;
+        }
+            body {
+                background-color: rgba(245, 172, 172, 0.637);
+            }
+    
+            header {
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                text-align: center;
+                width: 650px;
+                height: 50px;
+                background-color: rgb(207, 232, 220);
+                border: 2px solid rgb(79, 185, 227);
+                border-radius: 30px;
+                padding-bottom: 30px;
+    
+            }
+            nav{
+                position: absolute;
+                height: 160px;
+                width: 160px;
+            }
+            #left_panel {
+              
+                margin-bottom: 10px;
+                padding: 10px;
+                list-style-type: none;
+                width: 140px;
+                text-align: left;
+            }
+    
+            #left_panel a {
+                color: #000000;
+                padding: 5px 20px;
+                text-decoration: none;
+                font-weight: bold;
+                display: inline-block;
+                width: 100px;
+            }
+    
+            #left_panel a:hover {
+                border-radius: 20px 5px;
+                background-color: #0066ff41;
+            }
+            .box{
+                position: absolute;
+                top:30px;
+                left: 250px;
+                width: 1500px;
+                background-color: rgb(207, 232, 220);
+                border: 2px solid rgb(79, 185, 227);
+                border-radius: 30px;
+                text-align: center;
+            }
+            #img_ING{
+                border-radius: 20px;
+                position: relative;
+                top:20px;
+                left: -300px;
+                margin-bottom: 50px;
+            }
+            #text_ING{
+                left: 100px;
+            }
+    </style>
+    <script>
+        //scrypt do bloków
+        var currentBoxIndex = -1;
+    
+        function openbox(index) {
+            var boxes = document.getElementsByClassName('box');
+    
+            if (currentBoxIndex !== -1) {
+                boxes[currentBoxIndex].style.display = 'none';
+            }
+    
+            if (index !== currentBoxIndex) {
+                boxes[index].style.display = 'block';
+                currentBoxIndex = index;
+            } else {
+                currentBoxIndex = -1;
+            }
+        }
+
+    </script>
+</body>
+
 </html>
